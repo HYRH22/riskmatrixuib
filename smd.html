@@ -1,0 +1,78 @@
+<h1>Risk Management</h1>
+
+<h2>Enter a New Risk</h2>
+
+<form>
+  <label for="risk-description">Risk Description:</label><br>
+  <textarea id="risk-description" rows="5" cols="50"></textarea><br>
+  <label for="likelihood">Likelihood:</label><br>
+  <select id="likelihood">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select><br>
+  <label for="impact">Impact:</label><br>
+  <select id="impact">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select><br>
+  <label for="mitigation-strategy">Mitigation Strategy:</label><br>
+  <textarea id="mitigation-strategy" rows="5" cols="50"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Risk Matrix</h2>
+
+<table>
+  <tr>
+    <th>Likelihood</th>
+    <th>Impact</th>
+    <th>Risk Level</th>
+  </tr>
+  <tr>
+    <td>Low</td>
+    <td>Low</td>
+   <td style="background-color: green;">Low</td>
+  </tr>
+  <tr>
+    <td>Low</td>
+    <td>Medium</td>
+    <td style="background-color: yellow;">Medium</td>
+  </tr>
+  <tr>
+    <td>Low</td>
+    <td>High</td>
+    <td style="background-color: red;">High</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>Low</td>
+    <td style="background-color: yellow;">Medium</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td style="background-color: orange;">High</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>High</td>
+    <td style="background-color: red;">High</td>
+  </tr>
+  <tr>
+    <td>High</td>
+    <td>Low</td>
+    <td style="background-color: yellow;">Medium</td>
+  </tr>
+  <tr>
+    <td>High</td>
+    <td>Medium</td>
+    <td style="background-color: orange;">High</td>
+  </tr>
+  <tr>
+    <td>High</td>
+    <td>High</td>
+    <td style="background-color: red;">High</td>
+  </tr>
+</table>
